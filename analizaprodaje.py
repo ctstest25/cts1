@@ -1334,6 +1334,19 @@ elif uploaded_file is None:
     if 'main_ui_placeholder' in locals() and hasattr(main_ui_placeholder, 'empty'): main_ui_placeholder.empty()
     if 'sidebar_filters_placeholder' in locals() and hasattr(sidebar_filters_placeholder, 'empty'): sidebar_filters_placeholder.empty()
 
+st.markdown("---")
+st.markdown("""### Upute:
+1. Odaberite Tip analize
+2. Klikom na dugme "Browse Files" uvozite u alat jedan ili više fajlova za obradu i analizu.
+3. Kod "Analiza popunjenosti (word/excel)"
+4. **Odabir jednog od uvezenih fajlova:** Iz padajućeg menija sa lijeve strane izaberite po nazivu fajl za obradu. 
+4. **Odabir redova:** Označite kvadratić pored datuma u glavnoj tabeli.
+5. **Dodavanje za izvoz:**
+    * **"Dodaj trenutno prikazanu tabelu za izvoz" (u meniju prikazano lijevo):** Dodaje SVE redove iz trenutnog prikaza u tabelu za izvoz.
+    * **"Dodaj ODABRANE redove u listu za izvoz" (ispod tabele, ako su redovi odabrani selekcijom datuma):** Dodaje samo označene redove.
+6. **Odaberite sliku potpisa** (lijevo) koristeći dugme za odabir datoteke (PNG, JPG, JPEG) ukoliiko želite svoj potpis unutar samog dokumenta koji se izvozi.
+7. Izvezite dokument klikom na "generiši Excel" pa "preuzmi Excel".
+8. Klikom na X pored naziva dokumenta koji je trenutno uvezen za obradu, poništavate trenutni prikaz, nije potrebno restrtovati stranicu. """)
 
 st.sidebar.markdown("---")
 st.sidebar.info("ISKLJUČIVO ANALIZA PRODAJE PO POSLOVNICAMA I SUBAGENTIMA")
